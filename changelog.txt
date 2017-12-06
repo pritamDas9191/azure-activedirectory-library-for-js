@@ -1,3 +1,22 @@
+Version 1.0.15
+=========================
+* Added acquireTokenRedirect and acquireTokenPopup api's to acquire a token for resource interactively (MFA) and support conditional access.
+* Fixed a bug in acquireToken method that was happening when Adaljs was consumed as a module using loaders such as webpack.
+* Added custom event polyfill to support IE
+* Other bug fixes and updates
+
+Version 1.0.14
+=========================
+* Adding ability to specify anonymous sub-urls for a configured endpoint
+* Adding api documentation
+* Adding ability to turn off default navigation to start page after login. Set navigateToLoginRequestUrl:false.
+* Fixing http interceptor to look into templateCache first
+* Fixing infinite loop issues when using popUp for angular versions 1.5.8 or above
+* Fixing silent exception error in case of user defined callback function
+* Fixing double error pipeline in angular acquireToken method
+* Updating the default token expiry offset from 2 minutes to 5 minutes
+* Other bug fixes and updates
+
 Version 1.0.13
 =========================
 * Pass 'error' parameter to the callback besides 'error_description': #424
